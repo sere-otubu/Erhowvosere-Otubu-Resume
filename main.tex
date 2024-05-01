@@ -1,0 +1,261 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Sere Otubu} \\ \vspace{1pt}
+    Brampton, ON \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (647) 573-5388 ~ \href{mailto:youremail@email.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{21eo4@queensu.ca}} ~ 
+    \href{https://www.linkedin.com/in/sere-otubu-9782b1251/}{\raisebox{-0.2\height}\faLinkedin\ \underline{Sere Otubu LinkedIn}}  ~
+    \href{https://github.com/IceBergSlim111}{\raisebox{-0.2\height}\faGithub\ \underline{Sere Otubu GitHub}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Queen's University, Smith Engineering}{Sept 2021 -- Present}
+      {Bachelor of Applied Science - BASc Computer Engineering}{Kingston, ON}\
+      \resumeItemListStart
+      \resumeItem{Dean Scholars Distinction 2022-2023 \textbf{(CGPA: 3.69)}}
+      \resumeItem{Relevant Coursework: Data Stuctures \& Algorithms, Object-Oriented Programming, Database Management Systems}
+      % \resumeItem{Dyer Award (2022), Queen's University Excellence Scholarship (2021)}
+      % \resumeItem{Other third-party awards: BBPA National Scholarship (2022, 2023), Black Education Fund Award (2023)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Java, Python, C, HTML, CSS, MySQL, PHP, Arduino Code} \\
+    \textbf{Development Tools}{: Visual Studio Code, Android Studio, Git, JetBrain IDEs, Google Colab, Microsoft Office, XAMPP} \\
+     % \textbf{Technologies/Frameworks}{: WordPress, Figma} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Queen's Themed Entertainment Development Team}{April 2023 -- Present}
+      {Chief Technology Officer}{Kingston, ON}
+      \resumeItemListStart
+        \resumeItem{\textbf{Led a 10+ member engineering team}, setting performance goals and ensuring smooth day-to-day operations}
+        \resumeItem{Orchestrated the design and development of an innovative interactive trackless vehicle system, roller coaster layout, and comprehensive mathematical ride mode}
+        \resumeItem{Secured an invitation to the exclusive Universal Orlando Design Competition, an esteemed platform for showcasing creative and engineering prowess}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Startup, Inc}{May 2019 -- August 2019}
+    %   {Front End Developer Intern}{City, State}
+    %   \resumeItemListStart
+    %     \resumeItem{N/A}
+    % \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\textbf{QUHyve (Student Business Directory) - Co-Founder} $|$ \emph{WordPress, HTML/CSS}}{April 2023 -- Present}
+          \resumeItemListStart
+            % \resumeItem{\href{https://quhyve.com/}{\textit{QUHyve Website}}}
+            % \resumeItem{Spearheaded the development of a website, fostering connections between Queen’s University minority communities and over 15 student-led services}
+            \resumeItem{\textit{HYVE} is a social enterprise that connects the Queen's University minority community to student-led services catered to their needs}
+            \resumeItem{Co-Founder \& Developer: Spearheaded the launch of quhyve.com, significantly enhancing Queen's student minority community engagement}
+            \resumeItem{Drive \textbf{\$15,000 in student service revenue and \$5,000 direct revenue in the first quarter}, demonstrating business acumen}
+          \resumeItemListEnd
+          \vspace{-13pt}
+    \resumeProjectHeading
+        {\href{https://devpost.com/software/xts}{\textbf{QHacks 23 Theme Prize Winners: x-To-Speech}} $|$ \emph{Python, Computer Vision, PyCharm}}{January 2023}
+          \resumeItemListStart
+            \resumeItem{Developed an innovative system utilizing advanced computer vision and neural networks to convert real-world images and videos into auditory descriptions, enhancing accessibility for sensory-impaired users}
+            \resumeItem{Employed Python for data processing and integration of machine learning models, including ResNet101 and COCO datasets, to accurately recognize and classify objects in videos for real-time auditory feedback}
+            \resumeItem{Implemented frame-by-frame analysis and object recognition algorithms, processing thousands of images and video frames to identify objects in the user’s field of view with high accuracy}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Autonomous Plant System} $|$ \emph{Arduino Code, Arduino IDE}}{November 2022}
+          \resumeItemListStart
+            \resumeItem{Developed algorithms to automate plant care processes, including watering schedules and light exposure adjustments, based on real-time data insights.}
+            \resumeItem{Implemented a modular software architecture allowing for easy updates and integration of new sensors and actuators, enhancing the system's scalability and flexibility.}
+            \resumeItem{Through programmed logic and control algorithms, the system ensured optimal conditions for plant growth, resulting in improved health and productivity}
+          \resumeItemListEnd 
+%           \vspace{-13pt}
+%           \resumeProjectHeading
+%           {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+%           \resumeItemListStart
+%             \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+%             \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+%             \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+%           \resumeItemListEnd 
+%     \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Digital Systems
+%                 \item Computer Architecture
+%                 \item Discrete Math
+%                 \item OOP (Java)
+%                 \item Mechatronics Project
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Queen's University Black Youth in STEM}{March 2023 -- Present}{Student Mentor}{Queen's University}
+            \resumeItemListStart
+                \resumeItem{\textbf{Led youth sessions of up to 20+ students} through interactive learning experiences by showcasing popular games like Snake Game and Pong, effectively illustrating how code drives engaging activities}
+                \resumeItem{Achieved increased student engagement and participation through hands-on activities, resulting in improved comprehension of programming concepts.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+% %-----------AWARDS---------------
+% \section{Awards}
+%     \begin{itemize}[leftmargin=0.15in, label={}]
+%         \small{\item{
+%         \textbf{}
+%         }} 
+%     \end{itemize}
+%     \vspace{-16pt}
+
+\end{document}
